@@ -1,0 +1,82 @@
+### Git Version Control Lab Guide for Windows
+
+### Installing Git
+
+1. Download Git from [Git for Windows](https://gitforwindows.org/).
+2. Run the installer and follow the prompts, choosing default settings unless you have specific needs.
+3. After installation, open Git Bash from the Start menu.
+
+
+### Configuring Git
+
+1. Open Git Bash.
+
+2. Set your username:
+   git config --global user.name "Your Name"
+
+3. Set your email:
+   git config --global user.email "your.email@example.com"
+
+
+### Initializing a Repository
+
+1. Open Git Bash.
+2. Navigate to your project directory or create a new one:
+   mkdir my-git-repo
+   cd my-git-repo
+
+3. Initialize a new Git repository:
+   git init
+
+
+### Adding Files
+
+1. Create a new file:
+   echo "# My Git Repository" > README.md
+
+2. Add the file to the staging area:
+   git add README.md
+
+
+### Committing Changes
+
+Commit the file to the repository:
+   git commit -m "Initial commit"
+
+
+### Connecting to a Remote Repository
+
+1. Create a new repository on GitHub.
+2. Connect your local repository to the GitHub repository:
+   git remote add origin https://github.com/username/repository.git
+
+### Pushing Changes
+
+Push your changes to the remote repository:
+   git push -u origin main
+
+
+### Pulling Changes
+
+Pull changes from the remote repository:
+   git pull origin main
+
+
+### Merging Changes
+
+1. Create and switch to a new branch:
+   git checkout -b feature-branch
+
+2. Make changes to the branch and commit them:
+   echo "This is a new feature." > feature.txt
+   git add feature.txt
+   git commit -m "Add feature.txt"
+
+3. Switch back to the main branch:
+   git checkout main
+
+4. Merge the feature branch into the main branch:
+   git merge feature-branch
+
+5. Delete the feature branch:
+   git branch -d feature-branch
