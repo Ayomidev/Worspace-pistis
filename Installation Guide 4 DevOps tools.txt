@@ -1,0 +1,41 @@
+# Installation Guide for DevOps Tools
+
+## SSH (Secure Shell)
+
+### Installation on Windows
+1. Open PowerShell as an administrator.
+2. Install OpenSSH client:
+Add-WindowsCapability -Online -Name OpenSSH.Client*
+3. Verify Installation
+	ssh -V
+
+
+## SSH-Agent
+### Starting the SSH-Agent on Windows
+Open PowerShell as an administrator.
+Start the SSH-Agent service:
+	Start-Service ssh-agent
+Enable the SSH-Agent service to start automatically:
+	Get-Service ssh-agent | Set-Service -StartupType Automatic
+
+## Visual StudioCode (VSCode)
+### Installation on Windows
+Go to the VSCode download page.
+Download the installer for your operating system.
+Run the installer and follow the prompts.
+
+## Install VSCode Extensions
+### Useful Extensions for DevOps
+Open Visual Studio Code.
+Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or by pressing Ctrl+Shift+X.
+Search for and install the needed extensions
+
+##  Git Integration
+### Installation on Windows
+Download the Git installer from Git-SCM.
+Run the installer and follow the prompts.
+Verify installation:
+bash
+Copy code
+git --version
+
