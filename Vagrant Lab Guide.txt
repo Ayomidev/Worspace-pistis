@@ -1,0 +1,29 @@
+Install Vagrant
+
+Download and Install Vagrant from:
+    https://www.vagrantup.com/downloads.html
+
+Verify installation with
+    vagrant --version
+
+Create and Initialize Directory
+
+    mkdir vagrant_test
+    cd vagrant_test
+    vagrant init
+
+Configure the Box
+
+Edit Vagrantfile accordingly:
+    Vagrant.configure("2") do |config|
+    config.vm.box = "hashicorp/bionic64"
+    end
+
+Start Virtual Machine
+    vagrant up
+
+SSH Access
+    vagrant ssh
+
+Stop and Destroy
+    vagrant destroy
